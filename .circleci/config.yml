@@ -1,12 +1,12 @@
+# ~/.circleci/config.yml
 version: 2
 jobs:
-  one:
+  test:
     docker:
-      - image: cimg/ruby:2.6.8 
+      - image: cimg/ruby:2.6.8
         auth:
           username: vermac644@gmail.com
-          password: Vishal14012000
-          
+          password: Vishal14012000  # context / project UI env-var reference
      steps:
       - checkout:
       - run: echo " Its Vishal First Hello World...P"
